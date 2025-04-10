@@ -1,0 +1,28 @@
+/* Variables de color */
+:root {
+    --primary-color: #007bff;  /* Puedes ajustar este color según la paleta de la marca */
+    --secondary-color: #6c757d;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar-brand img {
+    margin-right: 10px;
+  }
+  
+  /* Sección de contenido */
+  .section-title {
+    color: var(--primary-color);
+  }
+  
+  /* Footer */
+  .footer {
+    font-size: 0.9rem;
+  }
+  
