@@ -12,32 +12,66 @@ html, body {
   margin: 0;    /* Elimina los márgenes por defecto */
   display: flex;
   flex-direction: column;  /* Apilar los elementos verticalmente */
+
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;  /* Apilar los elementos verticalmente */
+  background-color: rgb(rgb(249, 189, 151), green, blue)
 }
 
-/* Estilos personalizados para el logo */
+/* Estilos personalizados para el logo con efecto 3D */
 .navbar-logo-text {
   font-family: 'Poppins', sans-serif;
-  font-size: 40px; /* Ajusta el tamaño según lo que desees */
-  font-weight: 600; /* Ajusta el grosor de la fuente */
+  font-size: 40px;          /* Tamaño del logo */
+  font-weight: 600;         /* Grosor de la fuente */
+  color: white;             /* Color del texto */
+  text-shadow: 
+    1px 1px 0 #000,         /* Primer borde oscuro */
+    2px 2px 0 #000,         /* Segundo borde */
+    3px 3px 5px rgba(0,0,0,0.5);  /* Sombra difusa para profundidad */
 }
 
 
-/* Navbar */
+
+/* Navbar con efecto de profundidad 3D en los enlaces */
 .navbar-nav .nav-item .nav-link {
-  font-size: 23px;  /* Ajusta el tamaño de la letra de los enlaces */
-  font-weight: bold; /* Si quieres hacer las letras más gruesas */
+  font-size: 23px;           /* Tamaño de letra */
+  font-weight: bold;         /* Grosor del texto */
+  color: white;              /* Color del texto */
+  text-shadow: 
+    1px 1px 0 #000, 
+    2px 2px 0 #000, 
+    3px 3px 4px rgba(0, 0, 0, 0.5);  /* Sombra para profundidad */
+  transition: all 0.3s ease; /* Transición suave al hacer hover */
 }
+
+/* Efecto hover (opcional pero recomendado) */
+.navbar-nav .nav-item .nav-link:hover {
+  color: #e4ddff;            /* Cambia a un amarillo dorado */
+  text-shadow: 
+    1px 1px 0 #000, 
+    2px 2px 0 #000, 
+    4px 4px 6px rgba(0, 0, 0, 0.7);
+}
+
 
 .navbar-logo-text {
   font-family: 'Poppins', sans-serif;  /* Asegúrate de que Poppins esté cargado correctamente */
   font-weight: 600; /* Este peso de fuente puede ser ajustado según lo desees */
 }
+
+.navbar {
+  transform: perspective(800px) rotateX(4deg);
+  transform-origin: top;
+  background-color: #007bff;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1); /* Menos desplazamiento y sombra más suave */
+  z-index: 1000;
+}
+
+
 
 
 
@@ -76,6 +110,96 @@ main {
   height: 400px;           /* Altura estándar */
   object-fit: cover;       /* Ajusta la imagen para cubrir el área sin distorsionar */
 }
+
+/* Carrusel: fondo semitransparente + efecto de profundidad */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+  padding: 20px;
+  border-radius: 15px;
+  text-shadow: 
+    1px 1px 2px #000,
+    2px 2px 5px rgba(0, 0, 0, 0.6); /* Sombra para profundidad */
+  box-shadow: 
+    0 4px 15px rgba(0, 0, 0, 0.5); /* Efecto de caja 3D */
+  max-width: 90%;  /* Ajusta el ancho para responsividad */
+  margin: 0 auto;  /* Centrado horizontal */
+}
+
+/* Títulos del carrusel */
+.carousel-caption h5 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Textos debajo del título */
+.carousel-caption p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #f0f0f0;
+  margin-top: 10px;
+}
+
+/* Transición suave para el efecto */
+.carousel-caption {
+  transition: all 0.5s ease-in-out;
+}
+
+.card-body,
+.card-footer {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  color: white; /* Texto blanco para mejor contraste */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Sombra para mejor legibilidad */
+  backdrop-filter: blur(2px); /* Desenfoque para profundidad */
+}
+
+.card {
+  border-radius: 0; /* Eliminar redondeo del card */
+  overflow: hidden; /* Asegura que no haya desbordamientos del contenido */
+}
+
+.card-footer {
+  font-weight: bold;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Coherencia con el card-body */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: none; /* Eliminar cualquier borde superior que pueda separar el footer del body */
+}
+
+.card-footer small.text-muted {
+  color: white !important;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Para navegadores basados en WebKit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Para Firefox */
+html {
+  scrollbar-width: none; /* Oculta la scrollbar en Firefox */
+}
+
+/* Para Internet Explorer y Edge Legacy */
+body {
+  -ms-overflow-style: none; /* Oculta la scrollbar en IE 10+ y Edge Legacy */
+}
+
+
+
+
+
+
+
+
+
 
 
   
