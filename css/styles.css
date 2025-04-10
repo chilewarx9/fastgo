@@ -23,16 +23,22 @@ body {
 /* Estilos personalizados para el logo */
 .navbar-logo-text {
   font-family: 'Poppins', sans-serif;
-  font-size: 28px; /* Ajusta el tamaño según lo que desees */
+  font-size: 40px; /* Ajusta el tamaño según lo que desees */
   font-weight: 600; /* Ajusta el grosor de la fuente */
 }
 
 
 /* Navbar */
 .navbar-nav .nav-item .nav-link {
-  font-size: 18px;  /* Ajusta el tamaño de la letra de los enlaces */
+  font-size: 23px;  /* Ajusta el tamaño de la letra de los enlaces */
   font-weight: bold; /* Si quieres hacer las letras más gruesas */
 }
+
+.navbar-logo-text {
+  font-family: 'Poppins', sans-serif;  /* Asegúrate de que Poppins esté cargado correctamente */
+  font-weight: 600; /* Este peso de fuente puede ser ajustado según lo desees */
+}
+
 
 
 /* Sección de contenido */
