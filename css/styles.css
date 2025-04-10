@@ -1,28 +1,67 @@
 /* Variables de color */
 :root {
-    --primary-color: #007bff;  /* Puedes ajustar este color según la paleta de la marca */
-    --secondary-color: #6c757d;
-    --light-color: #f8f9fa;
-    --dark-color: #343a40;
-  }
-  
-  /* Estilos generales */
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  /* Navbar */
-  .navbar-brand img {
-    margin-right: 10px;
-  }
-  
-  /* Sección de contenido */
-  .section-title {
-    color: var(--primary-color);
-  }
-  
-  /* Footer */
-  .footer {
-    font-size: 0.9rem;
-  }
+  --primary-color: #007bff;  /* Puedes ajustar este color según la paleta de la marca */
+  --secondary-color: #6c757d;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+}
+
+/* Estilos generales */
+html, body {
+  height: 100%; /* Asegura que html y body ocupen toda la altura de la ventana */
+  margin: 0;    /* Elimina los márgenes por defecto */
+  display: flex;
+  flex-direction: column;  /* Apilar los elementos verticalmente */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;  /* Apilar los elementos verticalmente */
+}
+
+/* Estilos personalizados para el logo */
+.navbar-logo-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px; /* Ajusta el tamaño según lo que desees */
+  font-weight: 600; /* Ajusta el grosor de la fuente */
+}
+
+
+/* Navbar */
+.navbar-nav .nav-item .nav-link {
+  font-size: 18px;  /* Ajusta el tamaño de la letra de los enlaces */
+  font-weight: bold; /* Si quieres hacer las letras más gruesas */
+}
+
+
+/* Sección de contenido */
+.section-title {
+  color: var(--primary-color);
+}
+
+/* Asegúrate de que la sección de contenido ocupe todo el espacio disponible excepto el footer */
+main {
+  flex-grow: 1;  /* El contenido principal ocupa todo el espacio restante */
+}
+
+/* Footer */
+.footer {
+  font-size: 0.9rem;
+  background-color: var(--dark-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* Footer */
+.footer {
+  font-size: 0.9rem;
+  background-color: var(--dark-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
   
