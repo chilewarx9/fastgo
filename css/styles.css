@@ -70,4 +70,12 @@ main {
   text-align: center;
 }
 
+/* Estilos para el carrusel */
+.carousel-item img {
+  width: 800px;            /* Ancho estándar */
+  height: 400px;           /* Altura estándar */
+  object-fit: cover;       /* Ajusta la imagen para cubrir el área sin distorsionar */
+}
+
+
   
