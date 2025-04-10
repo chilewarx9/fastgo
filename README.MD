@@ -46,5 +46,3 @@ Abre el archivo `index.html` en tu navegador para explorar el sitio completo. To
 ---
 
 Esta solución integra Bootstrap en todas las páginas y mantiene una coherencia visual similar a la de franquicias líderes en el sector. Puedes ajustar imágenes, colores y textos de acuerdo a la identidad y necesidades específicas de FastGo.
-
-¿Necesitas algún ajuste adicional o ayuda para extender alguna funcionalidad en específico?
